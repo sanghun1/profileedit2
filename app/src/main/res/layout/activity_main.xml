@@ -12,8 +12,7 @@
         android:id="@+id/main_layout"
         android:layout_width="720dp"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal">
+        android:layout_weight="1">
 
         <LinearLayout
             android:id="@+id/gallery_layout"
@@ -53,12 +52,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="360dp"
                 android:gravity="center">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="갤러리입니다"
-                    android:textColor="#fbfafb"
-                    android:textSize="19dp" />
+
+                <ImageView
+                    android:id="@+id/img_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"/>
+
             </LinearLayout>
 
             <LinearLayout
